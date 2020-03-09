@@ -25,7 +25,7 @@ deploy_default_config: &deploy_default_config
   working_directory: *working_directory
 
 repo_cache_key: &repo_cache_key
-infrastructure-ameyrupji-com-{{ .Branch }}-{{ .Revision }}
+  infrastructure-ameyrupji-com-{{ .Branch }}-{{ .Revision }}
 
 restore_repo: &restore_repo
   restore_cache:
