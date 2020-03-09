@@ -1,0 +1,179 @@
+{
+    "list" : [
+        {
+            "name": "Amazon Route53",
+            "environment": "prod",
+            "image-src": "../src/images/aws-icons/Amazon-Route-53_light-bg@4x.png",
+            "image-alt": "Amazon Route53",
+            "list": [
+                "http://ameyrupji.com",
+                "http://www.ameyrupji.com",
+                "https://api.ameyrupji.com",
+                "http://iac.ameyrupji.com",
+                "http://infrastructure.ameyrupji.com [WIP]",
+                "http://code.ameyrupji.com",
+                "http://sitemanager.ameyrupji.com [WIP]",
+                "http://blog.ameyrupji.com",
+                "http://styleguide.ameyrupji.com/ [WIP]",
+                "http://sso.ameyrupji.com/ [WIP]",
+                "http://old.ameyrupji.com"
+            ]
+        },
+        {
+            "name": "Amazon Route53",
+            "environment": "beta",
+            "image-src": "../src/images/aws-icons/Amazon-Route-53_light-bg@4x.png",
+            "image-alt": "Amazon Route53",
+            "list": [
+                "http://beta.ameyrupji.com",
+                "http://www.beta.ameyrupji.com",
+                "https://api.beta.ameyrupji.com",
+                "http://iac.beta.ameyrupji.com",
+                "http://infrastructure.beta.ameyrupji.com [WIP]",
+                "http://code.beta.ameyrupji.com",
+                "http://sitemanager.beta.ameyrupji.com [WIP]",
+                "http://blog.beta.ameyrupji.com",
+                "http://styleguide.beta.ameyrupji.com/ [WIP]",
+                "http://sso.beta.ameyrupji.com/ [WIP]",
+                "http://old.beta.ameyrupji.com"
+            ]
+        },
+        {
+            "name": "Amazon Simple Storage Service",
+            "environment": "prod",
+            "image-src": "../src/images/aws-icons/Amazon-Simple-Storage-Service-S3_Bucket-with-Objects_light-bg@4x.png",
+            "image-alt": "Amazon Route53",
+            "list": [
+                "ameyrupji.com",
+                "www.ameyrupji.com",
+                "api.ameyrupji.com",
+                "iac.ameyrupji.com",
+                "infrastructure.ameyrupji.com",
+                "code.ameyrupji.com",
+                "sitemanager.ameyrupji.com",
+                "blog.ameyrupji.com",
+                "old.ameyrupji.com",
+                "ameyrupji.com-assets",
+                "styleguide.ameyrupji.com",
+                "sso.ameyrupji.com",
+                "ameyrupji.com-iac (Manually Created)"
+            ]
+        },
+        {
+            "name": "Amazon Simple Storage Service",
+            "environment": "beta",
+            "image-src": "../src/images/aws-icons/Amazon-Simple-Storage-Service-S3_Bucket-with-Objects_light-bg@4x.png",
+            "image-alt": "Amazon Route53",
+            "list": [
+                "beta.ameyrupji.com",
+                "beta.www.ameyrupji.com",
+                "api.beta.ameyrupji.com",
+                "iac.beta.ameyrupji.com",
+                "infrastructure.beta.ameyrupji.com",
+                "code.beta.ameyrupji.com",
+                "sitemanager.ameyrupji.com",
+                "blog.beta.ameyrupji.com",
+                "old.beta.ameyrupji.com",
+                "beta.ameyrupji.com-assets",
+                "styleguide.beta.ameyrupji.com",
+                "sso.beta.ameyrupji.com",
+                "ameyrupji.com-iac (Manually Created)"
+            ]
+        },
+        {
+            "name": "Amazon Route53 HostedZone",
+            "environment": "both",
+            "image-src": "../src/images/aws-icons/Amazon-Route-53_Hosted-Zone_light-bg@4x.png",
+            "image-alt": "Amazon Route53 HostedZone",
+            "list": [
+                "ameyrupji.com"
+            ]
+        },
+        {
+            "name": "AWS Lambda",
+            "environment": "prod",
+            "image-src": "../src/images/aws-icons/AWS-Lambda@4x.png",
+            "image-alt": "AWS Lambda",
+            "list": [
+                "get-root-lambda",
+                "post-email-lambda"
+            ]
+        },
+        {
+            "name": "AWS Lambda",
+            "environment": "beta",
+            "image-src": "../src/images/aws-icons/AWS-Lambda@4x.png",
+            "image-alt": "AWS Lambda",
+            "list": [
+                "beta-get-root-lambda",
+                "beta-post-email-lambda"
+            ]
+        },
+        {
+            "name": "Amazon CloudWatch",
+            "environment": "prod",
+            "image-src": "../src/images/aws-icons/Amazon-CloudWatch@4x.png",
+            "image-alt": "Amazon CloudWatch",
+            "list": [
+                "/lambda/get-root-lambda",
+                "/lambda/post-email-lambda"
+            ]
+        },
+        {
+            "name": "Amazon CloudWatch",
+            "environment": "beta",
+            "image-src": "../src/images/aws-icons/Amazon-CloudWatch@4x.png",
+            "image-alt": "Amazon CloudWatch",
+            "list": [
+                "/lambda/beta-get-root-lambda",
+                "/lambda/beta-post-email-lambda"
+            ]
+        },
+        {
+            "name": "Amazon API Gateway",
+            "environment": "prod",
+            "image-src": "../src/images/aws-icons/Amazon-API-Gateway@4x.png",
+            "image-alt": "Amazon API Gateway",
+            "list": [
+                "api.ameyrupji.com"
+            ]
+        },
+        {
+            "name": "Amazon API Gateway",
+            "environment": "beta",
+            "image-src": "../src/images/aws-icons/Amazon-API-Gateway@4x.png",
+            "image-alt": "Amazon API Gateway",
+            "list": [
+                "api.beta.ameyrupji.com"
+            ]
+        },
+        {
+            "name": "AWS Certificate Manager",
+            "environment": "prod",
+            "image-src": "../src/images/aws-icons/AWS-Certificate-Manager@4x.png",
+            "image-alt": "AWS Certificate Manager",
+            "list": [
+                "*.ameyrupji.com (Manually Created)"
+            ]
+        },
+        {
+            "name": "AWS Certificate Manager",
+            "environment": "beta",
+            "image-src": "../src/images/aws-icons/AWS-Certificate-Manager@4x.png",
+            "image-alt": "AWS Certificate Manager",
+            "list": [
+                "*.beta.ameyrupji.com (Manually Created)"
+            ]
+        },
+        {
+            "name": "AWS Identity and Access Management",
+            "environment": "both",
+            "image-src": "../src/images/aws-icons/AWS-Identity-and-Access-Management_IAM@4x.png",
+            "image-alt": "AWS Identity and Access Management",
+            "list": [
+                "circleci-iac-user (Manually Created)",
+                "circleci-s3-put (Manually Created)"
+            ]
+        }
+    ]
+}

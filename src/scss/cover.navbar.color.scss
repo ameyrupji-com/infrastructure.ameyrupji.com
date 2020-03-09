@@ -1,0 +1,75 @@
+.navbar { 
+    &.nav-scrolled-20 {
+        background: rgba(255, 255, 255, 0.7);
+        
+        .navbar-brand {
+            color: rgba(0, 0, 0, 1);
+        }
+
+        #site-name {
+            -webkit-text-stroke-color: rgba(0, 0, 0, 1);
+        }
+        
+        .nav-item {
+            a {
+                color: rgba(0, 0, 0, 0.7);
+                
+                &:hover {
+                    color: rgba(0, 0, 0, 1);
+                }
+            }
+        }
+
+        #burger .bar {
+            background: rgba(0, 0, 0, 1);
+        }
+    }
+
+    &.navbar-open {
+        .navbar-brand {
+            color: rgba(0, 0, 0, 1);;
+        }
+    }
+
+    #burger .bar {
+        background: rgba(255, 255, 255, 1);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .navbar {
+        &.nav-scrolled-20 {
+            background: rgba(0, 0, 0, 0.7);
+
+
+            #site-name {
+                -webkit-text-stroke-color: #fff;
+            }
+        
+            
+            .navbar-brand {
+                color: #fff;
+            }
+            
+            .nav-item {
+                a {
+                    color: rgba(255, 255, 255, 0.7);
+                    
+                    &:hover {
+                        color: rgba(255, 255, 255, 1);
+                    }
+                }
+            }
+
+            #burger .bar {
+                background: rgba(255, 255, 255, 1);
+            }
+        }
+
+        &.navbar-open {
+            .navbar-brand {
+                color: rgba(255, 255, 255, 1);
+            }
+        }
+    }
+}

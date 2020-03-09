@@ -1,0 +1,25 @@
+# Commands to be run to create the favicons for this website
+
+
+
+## Beta: 
+
+```
+./icons.sh -i ../src/images/icon-dark-mode-beta.png -o ../src/images/beta-icons
+```
+
+## Prod:
+```
+./icons.sh -i ../src/images/icon-dark-mode.png -o ../src/images/icons
+```
+
+## Copy and rename Prod
+```
+cp ../src/images/icons/favicon-64x64.png ../src/favicon.ico
+```
+
+
+
+## Reference Links:
+- https://realfavicongenerator.net/api/#.XM4ABC-ZPUJ
+- https://www.npmjs.com/package/icon-gen 

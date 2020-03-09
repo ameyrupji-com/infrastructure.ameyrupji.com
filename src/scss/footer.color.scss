@@ -1,0 +1,49 @@
+
+#footer-main {
+    background-color: #efefef;
+    color: #444;
+
+    .footer-no-icons-flat-list li {
+        &:not(:first-child) a {
+            border-left: 1px solid #444;
+
+        }
+    }
+
+    p,
+    a,
+    i,
+    li {
+        color: #444;
+    }
+
+    hr {
+        border-top: 1px solid #aaa;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+
+    #footer-main {
+        background-color: #444;
+        color: #eee;
+
+        .footer-no-icons-flat-list li {
+            &:not(:first-child) a {
+                border-left: 1px solid #eee;
+    
+            }
+        }
+    
+        p,
+        a,
+        i,
+        li {
+            color: #eee;
+        }
+    
+        hr {
+            border-top: 1px solid #eee;
+        }
+    }
+}

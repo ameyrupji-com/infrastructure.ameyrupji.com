@@ -1,0 +1,178 @@
+version: 2.1
+
+orbs:
+  aws-s3: circleci/aws-s3@1.0.4
+
+references:
+
+build_base_image: &build_base_image
+  circleci/node:11.10.0
+
+deploy_base_image: &deploy_base_image
+  circleci/python:2.7
+
+working_directory: &working_directory
+  ~/infrastructure-ameyrupji-com
+
+build_default_config: &build_default_config
+  docker:
+    - image: *build_base_image
+  working_directory: *working_directory
+
+deploy_default_config: &deploy_default_config
+  docker:
+    - image: *deploy_base_image
+  working_directory: *working_directory
+
+repo_cache_key: &repo_cache_key
+infrastructure-ameyrupji-com-{{ .Branch }}-{{ .Revision }}
+
+restore_repo: &restore_repo
+  restore_cache:
+    key: *repo_cache_key
+
+save_repo: &save_repo
+  save_cache:
+    key: *repo_cache_key
+    paths:
+      - *working_directory
+
+jobs:
+  build:
+    <<: *build_default_config
+    steps:
+      - checkout
+      - run: 
+          name: build
+          command: | 
+            cd src/
+            rm view/data/app.json
+            mv view/data/prod/app.json view/data/app.json
+            rm -rf dist/
+            npm install parcel-bundler --save-dev
+            npm run build
+      - *save_repo
+  build-develop:
+    <<: *build_default_config
+    steps:
+      - checkout
+      - run: 
+          name: build
+          command: | 
+            cd src/
+            rm view/data/app.json
+            mv view/data/beta/app.json view/data/app.json
+            rm -rf dist/
+            npm install parcel-bundler --save-dev
+            npm run build
+            cd dist/
+            find ./ -type f -name '*.css' -exec sed -i 's|url(../|url(|g' {} \;
+      - *save_repo
+  build-branch:
+    <<: *build_default_config
+    steps:
+      - checkout
+      - run: 
+          name: build
+          command: | 
+            cd src/
+            rm view/data/app.json
+            mv view/data/beta/app.json view/data/app.json
+            rm -rf dist/
+            npm install parcel-bundler --save-dev
+            npm run build
+            cd dist/
+            find ./ -type f -name '*.css' -exec sed -i 's|url(../|url(|g' {} \;
+      - *save_repo
+  upload-master:
+    <<: *deploy_default_config
+    steps:
+      - *restore_repo
+      - aws-s3/copy:
+          from: /home/circleci/infrastructure-ameyrupji-com/src/dist/ 
+          to: 's3://infrastructure.ameyrupji.com/'
+          arguments: --recursive
+  upload-develop:
+    <<: *deploy_default_config
+    steps:
+      - *restore_repo
+      - aws-s3/copy:
+          from: /home/circleci/infrastructure-ameyrupji-com/src/dist/ 
+          to: 's3://infrastructure.beta.ameyrupji.com/'
+          arguments: --recursive
+  upload-branches:
+    <<: *deploy_default_config
+    steps:
+      - *restore_repo
+      - aws-s3/copy:
+          from: /home/circleci/infrastructure-ameyrupji-com/src/dist/ 
+          to: s3://infrastructure.beta.ameyrupji.com/${CIRCLE_BRANCH}
+          arguments: --recursive
+  upload-releases:
+    <<: *deploy_default_config
+    steps:
+      - *restore_repo
+      - aws-s3/copy:
+          from: /home/circleci/infrastructure-ameyrupji-com/src/dist/ 
+          to: s3://infrastructure.ameyrupji.com/${CIRCLE_BRANCH}
+          arguments: --recursive
+
+workflows:
+  version: 2
+  build-upload:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only: 
+                - master
+                - /release.*/
+      - build-develop:
+          filters:
+            branches:
+              only: 
+                - develop
+      - build-branch:
+          filters:
+            branches:
+              ignore: 
+                - master
+                - develop
+                - /release.*/
+      - approve:
+          type: approval
+          requires:
+            - build
+          filters:
+            branches:
+              only: 
+                - master
+                - /release.*/
+      - upload-master:
+          requires:
+              - approve
+          filters:
+              branches:
+                only: master
+      - upload-develop:
+          requires:
+              - build-develop 
+          filters:
+              branches:
+                only: develop
+      - upload-releases:
+          requires:
+              - approve
+          filters:
+            branches:
+              only: /release.*/
+      - upload-branches:
+          requires:
+              - build-branch
+          filters:
+              branches:
+                ignore: 
+                  - master
+                  - develop
+                  - /release.*/
+
