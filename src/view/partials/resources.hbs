@@ -1,7 +1,7 @@
 <div class="container" id="resources-main">
-    <h1 class="title" data-aos="fade-right"><span class="title-strong">Resources</span></h1>
+    <h1 class="title" data-aos="fade-right"><span class="title">Resources</span></h1>
     <br/>
-    <div class="row container-btns" id="resource-btns" data-aos="zoom-in">
+    <div class="row container-btns" id="resource-btns" >
         <div class="col-md-12 text-center">
             <div class="btn-group center" role="group">
                 <button type="button" class="btn btn-primary" id="resource-btn-prod">Prod</button>
@@ -11,7 +11,7 @@
     </div>
     <div class="row">
         {{#each resources.list}}
-        <div class="card resource-card" data-environment="{{this.environment}}" data-aos="zoom-out-up">
+        <div class="card resource-card" data-environment="{{this.environment}}" data-aos="zoom-out-up" data-aos-anchor-placement="top-bottom">
             <div class="card-body">
                 <div class="media">
                     <img src="{{this.image-src}}" class="mr-4" alt="{{this.image-alt}}" width="50px" height="50px">
