@@ -6,7 +6,7 @@
     "website_link": "http://beta.ameyrupji.com/",
     "code_link": "https://github.com/ameyrupji-com/infrastructure.ameyrupji.com/tree/develop",
     "google_analytics_tracking_id": "UA-16933728-7",
-    "active-version": "v1.0.0",
+    "active-version": "v1.0.0 - Beta",
     "old-versions": [],
     "other-links": [
         {
@@ -49,11 +49,6 @@
             "text": "Cookie Policy",
             "href": "https://github.com/ameyrupji-com/infrastructure.ameyrupji.com/blob/v1.0.0/Cookie-Policy.md",
             "id": "cookie-policy"
-        },
-        {
-            "text": "Version: v1.0.0 - Beta",
-            "href": "https://github.com/ameyrupji-com/infrastructure.ameyrupji.com/releases/",
-            "id": "release-number-footer"
         },
         {
             "text": "Release Notes",

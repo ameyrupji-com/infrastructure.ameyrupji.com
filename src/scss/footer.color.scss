@@ -5,20 +5,19 @@
     
     .footer-no-icons-flat-list li {
         &:not(:first-child) a {
-            border-left: 1px solid #444;
+            border-color: #444;
 
         }
     }
 
     #versions button {
         span {
-            border-left: 1px solid #444;
+            border-color: #444;
             color: #444;
         }
         &:after {
             color: #444;
         }
-        
     }
 
     p,
@@ -41,20 +40,18 @@
 
         .footer-no-icons-flat-list li {
             &:not(:first-child) a {
-                border-left: 1px solid #eee;
-    
+                border-color:  #eee;
             }
         }
 
         #versions button {
             span {
-                border-left: 1px solid #eee;
+                border-color:  #eee;
                 color: #eee;
             }
             &:after {
                 color: #eee;
             }
-
         }
     
         p,

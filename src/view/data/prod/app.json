@@ -51,11 +51,6 @@
             "id": "cookie-policy"
         },
         {
-            "text": "Version: v1.0.0",
-            "href": "https://github.com/ameyrupji-com/infrastructure.ameyrupji.com/releases/",
-            "id": "release-number-footer"
-        },
-        {
             "text": "Release Notes",
             "href": "https://github.com/ameyrupji-com/infrastructure.ameyrupji.com/releases/",
             "id": "release-notes"
