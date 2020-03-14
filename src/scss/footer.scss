@@ -60,6 +60,28 @@
             padding: 0;
         }
     }
+
+    #versions {
+        vertical-align: initial;
+        
+        button {
+            opacity: .8;
+            padding: 0;
+            margin-left: 10px;
+
+            span {
+                opacity: .8;
+                padding-left: 10px;
+
+            }
+
+            &:focus,
+            &:hover {
+                text-decoration: none;
+                opacity: 1;
+            }
+        }
+    }
 }
 
 @media (max-width:768px) {

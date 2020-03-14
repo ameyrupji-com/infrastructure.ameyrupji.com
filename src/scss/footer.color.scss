@@ -2,12 +2,23 @@
 #footer-main {
     background-color: #efefef;
     color: #444;
-
+    
     .footer-no-icons-flat-list li {
         &:not(:first-child) a {
             border-left: 1px solid #444;
 
         }
+    }
+
+    #versions button {
+        span {
+            border-left: 1px solid #444;
+            color: #444;
+        }
+        &:after {
+            color: #444;
+        }
+        
     }
 
     p,
@@ -33,6 +44,17 @@
                 border-left: 1px solid #eee;
     
             }
+        }
+
+        #versions button {
+            span {
+                border-left: 1px solid #eee;
+                color: #eee;
+            }
+            &:after {
+                color: #eee;
+            }
+
         }
     
         p,

@@ -3,10 +3,16 @@
     "app_url": "http://infrastructure.ameyrupji.com/",
     "icons_folder": "icons",
     "api_base_url": "https://api.ameyrupji.com",
+    "website_link": "http://ameyrupji.com/",
+    "code_link": "https://github.com/ameyrupji-com/infrastructure.ameyrupji.com/tree/master",
     "google_analytics_tracking_id": "UA-16933728-6",
     "active-version": "v1.0.0",
     "old-versions": [],
     "other-links": [
+        {
+            "text": "Website",
+            "href": "http://ameyrupji.com/"
+        },
         {
             "text": "Blog",
             "href": "http://blog.ameyrupji.com/"
@@ -62,7 +68,7 @@
     ],
     "license-link": {
         "text": "Read More...",
-        "href": "https://github.com/ameyrupji/infrastructure.ameyrupji.com/blob/v1.0.0/LICENSE",
+        "href": "https://github.com/ameyrupji-com/infrastructure.ameyrupji.com/blob/v1.0.0/LICENSE",
         "id": "license-link"
     }
 }

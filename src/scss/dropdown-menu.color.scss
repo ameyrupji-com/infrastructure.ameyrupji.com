@@ -1,0 +1,17 @@
+.dropdown-menu {
+
+}
+
+
+@media (prefers-color-scheme: dark) {
+    .dropdown-menu {
+        background-color: #161719;
+
+        .dropdown-item {
+            &:hover {
+                background-color: #444;
+            }
+        }
+    }
+
+}

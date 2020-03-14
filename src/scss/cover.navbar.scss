@@ -9,11 +9,15 @@
         font-weight: 100;
     }
 
+    #navbar-brand-thin {
+        font-weight: 100;
+    }
+
     #navbar-brand-alternate {
         font-weight: 900;
     }
 
-    #site-name {
+    #navbar-brand-site-name {
         font-weight: 900;
         color: transparent;
         -webkit-text-stroke-width: 1px;
@@ -69,12 +73,19 @@
     }
 }
 
-@media (max-width:768px) {
+
+
+@media only screen and (max-width: 544px) {
     .navbar {
+        #navbar-brand-thin,
+        #navbar-brand-alternate {
+            display: none;
+        }
+
         .navbar-toggler {
             border: 0px;
         }
-
+        
         #burger {
             width: 18px;
             height: 8px;
@@ -153,4 +164,20 @@
             }
         }
     }
+} 
+
+/* Small devices (portrait tablets and large phones, 544px and up) */
+@media only screen and (min-width: 544px) {
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }
