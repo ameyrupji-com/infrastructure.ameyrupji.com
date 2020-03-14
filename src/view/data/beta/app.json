@@ -42,22 +42,22 @@
     "policy_links": [
         {
             "text": "Privacy Policy",
-            "href": "https://github.com/ameyrupji/infrastructure.ameyrupji.com/blob/v1.0.0/Privacy-Policy.md",
+            "href": "https://github.com/ameyrupji-com/infrastructure.ameyrupji.com/blob/v1.0.0/Privacy-Policy.md",
             "id": "privacy-policy"
         },
         {
             "text": "Cookie Policy",
-            "href": "https://github.com/ameyrupji/infrastructure.ameyrupji.com/blob/v1.0.0/Cookie-Policy.md",
+            "href": "https://github.com/ameyrupji-com/infrastructure.ameyrupji.com/blob/v1.0.0/Cookie-Policy.md",
             "id": "cookie-policy"
         },
         {
             "text": "Version: v1.0.0 - Beta",
-            "href": "https://github.com/ameyrupji/infrastructure.ameyrupji.com/releases/",
+            "href": "https://github.com/ameyrupji-com/infrastructure.ameyrupji.com/releases/",
             "id": "release-number-footer"
         },
         {
             "text": "Release Notes",
-            "href": "https://github.com/ameyrupji/infrastructure.ameyrupji.com/releases/",
+            "href": "https://github.com/ameyrupji-com/infrastructure.ameyrupji.com/releases/",
             "id": "release-notes"
         },
         {
