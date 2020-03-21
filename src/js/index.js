@@ -5,4 +5,5 @@ $(document).ready(function() {
   site.all.init();
   site.cover.init();
   site.resources.init();
+  site.versionBand.init();
 });
