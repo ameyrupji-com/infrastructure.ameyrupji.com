@@ -5,16 +5,8 @@
     "api_base_url": "https://api.beta.ameyrupji.com",
     "website_link": "http://ameyrupji.com/",
     "code_link": "https://github.com/ameyrupji-com/infrastructure.ameyrupji.com/tree/develop",
-    "active-version": "v1.0.0",
+    "active-version": "Local",
     "old-versions": [
-        {
-            "text": "v0.2",
-            "href": "v0-2"
-        },
-        {
-            "text": "v0.1",
-            "href": "v0-1"
-        }
     ],
     "other-links": [
         {
