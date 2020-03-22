@@ -6,8 +6,13 @@
     "website_link": "http://beta.ameyrupji.com/",
     "code_link": "https://github.com/ameyrupji-com/infrastructure.ameyrupji.com/tree/develop",
     "google_analytics_tracking_id": "UA-16933728-7",
-    "active-version": "v1.0.0 - Beta",
-    "old-versions": [],
+    "active-version": "v1.1.0 - Beta",
+    "old-versions": [
+        {
+            "text": "v1.0.0 - Beta",
+            "href": "v1-0-0"
+        }
+    ],
     "other-links": [
         {
             "text": "Website",
