@@ -5,12 +5,12 @@
 ## Beta: 
 
 ```
-./icons.sh -i ../src/images/icon-dark-mode-beta.png -o ../src/images/beta-icons
+./icons.sh -i ../src/images/icon-beta.png -o ../src/images/beta-icons
 ```
 
 ## Prod:
 ```
-./icons.sh -i ../src/images/icon-dark-mode.png -o ../src/images/icons
+./icons.sh -i ../src/images/icon.png -o ../src/images/icons
 ```
 
 ## Copy and rename Prod

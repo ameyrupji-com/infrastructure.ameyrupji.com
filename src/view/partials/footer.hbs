@@ -61,7 +61,7 @@
                         <div class="dropdown-menu" x-placement="top-start">
                             <h6 class="dropdown-header">Older Versions:</h6>
                             {{#each app.old-versions}}
-                            <a class="dropdown-item" href="{{app.app_url}}/release/{{this.href}}">{{this.text}}</a>
+                            <a class="dropdown-item" href="{{app.app_url}}/{{this.href}}">{{this.text}}</a>
                             {{/each}}
                         </div>
                     </div>
