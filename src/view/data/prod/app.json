@@ -6,11 +6,15 @@
     "website_link": "http://ameyrupji.com/",
     "code_link": "https://github.com/ameyrupji-com/infrastructure.ameyrupji.com/tree/master",
     "google_analytics_tracking_id": "UA-16933728-6",
-    "active-version": "v1.1.0",
+    "active-version": "v1.2.0",
     "old-versions": [
         {
             "text": "v1.0.0",
-            "href": "v1-0-0"
+            "href": "release/v1-0-0"
+        },
+        {
+            "text": "v1.1.0",
+            "href": "release/v1-1-0"
         }
     ],
     "other-links": [
