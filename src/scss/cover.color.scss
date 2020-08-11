@@ -1,12 +1,12 @@
 
-#gradient-main {
-  background-color: rgba(0, 0, 0, 0);
+.gradient-main {
   background: rgba(53, 92, 125, 1);
+  background: linear-gradient(170deg,transparent 70%,#fff 70%), linear-gradient(to right, rgb(53, 92, 125), #330867);
 }
 
 @media (prefers-color-scheme: dark) {
-  #gradient-main {
-    background-color: rgba(0, 0, 0, 0);
+  .gradient-main {
     background: #1f374b;
+    background: linear-gradient(170deg,transparent 70%, #161719 70%), linear-gradient(to right, #1f374b, #330867);
   }
 }
